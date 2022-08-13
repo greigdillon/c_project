@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Person{
+  string name = 1;
+  string phone_number = 2;
+}
+
+service Methods{
+  rpc CreatePerson(Person) returns (Person);
+}
